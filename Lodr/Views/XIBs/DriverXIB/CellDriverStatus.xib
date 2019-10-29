@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CellDriverStatus" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellDriverStatus" rowHeight="110" id="PQW-Ou-KFa" customClass="CellDriverStatus">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PQW-Ou-KFa" id="hRM-P8-thE">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                        <rect key="frame" x="0.0" y="23" width="320" height="65"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQg-Br-nCS">
+                                <rect key="frame" x="0.0" y="4" width="320" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="lPp-QH-NAy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="25"/>
+                                <state key="normal" title="ON TIME">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStatusNameClicked:" destination="PQW-Ou-KFa" eventType="touchUpInside" id="Bm8-7a-zKf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STATUS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PW-4z-v6X">
+                                <rect key="frame" x="0.0" y="39" width="320" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="RsP-dN-Hua"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pQg-Br-nCS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="8Ae-Ua-5ih"/>
+                            <constraint firstItem="pQg-Br-nCS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DC8-7r-NUc"/>
+                            <constraint firstAttribute="bottom" secondItem="7PW-4z-v6X" secondAttribute="bottom" constant="6" id="DRi-QW-qrd"/>
+                            <constraint firstAttribute="trailing" secondItem="pQg-Br-nCS" secondAttribute="trailing" id="Fg7-LM-YPm"/>
+                            <constraint firstItem="7PW-4z-v6X" firstAttribute="top" secondItem="pQg-Br-nCS" secondAttribute="bottom" id="K7c-ZQ-4Rt"/>
+                            <constraint firstAttribute="trailing" secondItem="7PW-4z-v6X" secondAttribute="trailing" id="N12-0k-crn"/>
+                            <constraint firstItem="7PW-4z-v6X" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ffY-MO-Xxv"/>
+                            <constraint firstItem="7PW-4z-v6X" firstAttribute="top" secondItem="pQg-Br-nCS" secondAttribute="bottom" id="qlY-5R-jyr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="1Do-cX-cgB"/>
+                    <constraint firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="21" id="27z-kU-qMK"/>
+                    <constraint firstItem="iN0-l3-epB" firstAttribute="leading" secondItem="hRM-P8-thE" secondAttribute="leading" id="LtS-hL-HS2"/>
+                    <constraint firstItem="iN0-l3-epB" firstAttribute="top" secondItem="hRM-P8-thE" secondAttribute="top" constant="23" id="fwQ-0j-oRE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnStatusName" destination="pQg-Br-nCS" id="17j-bb-TzT"/>
+                <outlet property="lblStatusDetail" destination="7PW-4z-v6X" id="SOo-BX-2J1"/>
+            </connections>
+            <point key="canvasLocation" x="-70" y="-199"/>
+        </tableViewCell>
+    </objects>
+</document>

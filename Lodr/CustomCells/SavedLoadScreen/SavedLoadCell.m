@@ -1,0 +1,24 @@
+//
+//  SavedLoadCell.m
+//  Lodr
+//
+//  Created by C109 on 03/03/18.
+//  Copyright © 2018 checkmate. All rights reserved.
+//
+
+#import "SavedLoadCell.h"
+
+@implementation SavedLoadCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
+@end

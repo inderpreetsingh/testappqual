@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G31" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDAllMatches" representedClassName="CDAllMatches" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="closetime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cmpnyPhoneNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dotAddresses" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dotNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isContacted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFavourite" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isHide" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isLike" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="matchDistance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="matchEquiid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="matchFromId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="matchId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="matchLoadid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="matchOrderStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="matchToId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mcNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="opentime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primaryEmailId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profilePicture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="secondaryEmailId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userLatitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userLongitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userPreferenceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userRole" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDEquipments" representedClassName="CDEquipments" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="equiAvailablity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="equiHeight" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="equiLatitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="equiLength" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="equiLongitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="equiName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="equiNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="equiWeight" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="equiWidth" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="esId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="internalBaseClassIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isPublish" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isTest" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visibleTo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDEspecialEquiList" representedClassName="CDEspecialEquiList" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="internalBaseClassIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isTest" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDLoads" representedClassName="CDLoads" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="delieveryDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryCountry" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryLatitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryLongitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="esId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_delete" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isAllowComment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isBestoffer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isPublish" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loadCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loadDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loadHeight" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loadid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loadLength" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loadWeight" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loadWidth" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="offerRate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupCountry" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupLatitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupLongitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pickupTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visiableTo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDSubEspecialEquiList" representedClassName="CDSubEspecialEquiList" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="esName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="internalBaseClassIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDelete" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isTest" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="modifiedDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDAllMatches" positionX="-45" positionY="147" width="128" height="585"/>
+        <element name="CDEquipments" positionX="108" positionY="297" width="128" height="330"/>
+        <element name="CDEspecialEquiList" positionX="108" positionY="297" width="128" height="135"/>
+        <element name="CDLoads" positionX="261" positionY="144" width="128" height="585"/>
+        <element name="CDSubEspecialEquiList" positionX="117" positionY="306" width="128" height="150"/>
+    </elements>
+</model>

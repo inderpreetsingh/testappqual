@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="A4Q-Eg-GUw" customClass="LoadDetailFooter">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1kj-nR-82e">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3l-XO-ofr">
+                            <rect key="frame" x="65" y="59" width="190" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="7pl-Nh-ohd"/>
+                                <constraint firstAttribute="width" constant="190" id="cHe-1X-fQM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                            <state key="normal" title="CANCEL LOAD">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnlinkscheduleconfirmclicked:" destination="A4Q-Eg-GUw" eventType="touchUpInside" id="O2a-eN-gr0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKS-vX-MQD">
+                            <rect key="frame" x="65" y="8" width="190" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="UJp-ad-5OO"/>
+                                <constraint firstAttribute="width" constant="190" id="bYS-DZ-YVJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                            <state key="normal" title="NOT INTERESTED">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnnotinterestedclicked:" destination="A4Q-Eg-GUw" eventType="touchUpInside" id="9Zv-ce-oTh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="N3l-XO-ofr" firstAttribute="top" secondItem="iKS-vX-MQD" secondAttribute="bottom" constant="6" id="5jr-WY-s4S"/>
+                        <constraint firstItem="iKS-vX-MQD" firstAttribute="centerX" secondItem="1kj-nR-82e" secondAttribute="centerX" id="Fln-Vi-wgm"/>
+                        <constraint firstItem="N3l-XO-ofr" firstAttribute="width" secondItem="iKS-vX-MQD" secondAttribute="width" id="SWx-pL-aqc"/>
+                        <constraint firstItem="iKS-vX-MQD" firstAttribute="top" secondItem="1kj-nR-82e" secondAttribute="top" constant="8" id="e7S-pZ-dr7"/>
+                        <constraint firstItem="N3l-XO-ofr" firstAttribute="centerX" secondItem="1kj-nR-82e" secondAttribute="centerX" id="jaq-5S-Lj8"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Aa-gb-uXk">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9je-nk-W67">
+                            <rect key="frame" x="6" y="5" width="150" height="45"/>
+                            <color key="backgroundColor" red="0.90588235289999997" green="0.37254901959999998" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="G6r-XL-eH1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                            <state key="normal" title="PUBLISH">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnmakepublishclicked:" destination="A4Q-Eg-GUw" eventType="touchUpInside" id="jTA-gX-9mK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htZ-JE-lm8">
+                            <rect key="frame" x="164" y="5" width="150" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="bRd-gi-4Sn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                            <state key="normal" title="EDIT LOAD">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btneditloadclicked:" destination="A4Q-Eg-GUw" eventType="touchUpInside" id="Dnr-1v-7Om"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMX-st-qxW">
+                            <rect key="frame" x="85" y="56" width="150" height="45"/>
+                            <color key="backgroundColor" red="1" green="0.12941176469999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="l1G-Jl-nZw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                            <state key="normal" title="DELETE">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnmarkascancelclicked:" destination="A4Q-Eg-GUw" eventType="touchUpInside" id="Flm-Zp-pol"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="9je-nk-W67" firstAttribute="leading" secondItem="6Aa-gb-uXk" secondAttribute="leading" constant="6" id="5sa-Zg-bi9"/>
+                        <constraint firstItem="9je-nk-W67" firstAttribute="top" secondItem="6Aa-gb-uXk" secondAttribute="top" constant="5" id="OjZ-qA-sAt"/>
+                        <constraint firstItem="htZ-JE-lm8" firstAttribute="width" secondItem="9je-nk-W67" secondAttribute="width" id="STv-P8-i38"/>
+                        <constraint firstItem="VMX-st-qxW" firstAttribute="top" secondItem="9je-nk-W67" secondAttribute="bottom" constant="6" id="TN5-XB-dV2"/>
+                        <constraint firstItem="VMX-st-qxW" firstAttribute="centerX" secondItem="6Aa-gb-uXk" secondAttribute="centerX" id="bUe-RK-0HQ"/>
+                        <constraint firstAttribute="trailing" secondItem="htZ-JE-lm8" secondAttribute="trailing" constant="6" id="c0b-1G-ujq"/>
+                        <constraint firstItem="htZ-JE-lm8" firstAttribute="leading" secondItem="9je-nk-W67" secondAttribute="trailing" constant="8" id="fUt-nT-hn8"/>
+                        <constraint firstItem="VMX-st-qxW" firstAttribute="width" secondItem="htZ-JE-lm8" secondAttribute="width" id="qTB-L9-TwV"/>
+                        <constraint firstItem="htZ-JE-lm8" firstAttribute="top" secondItem="6Aa-gb-uXk" secondAttribute="top" constant="5" id="y2U-8T-emq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6Aa-gb-uXk" secondAttribute="trailing" id="7i0-Jf-eA3"/>
+                <constraint firstItem="6Aa-gb-uXk" firstAttribute="top" secondItem="A4Q-Eg-GUw" secondAttribute="top" id="CgB-Ag-rzz"/>
+                <constraint firstAttribute="bottom" secondItem="1kj-nR-82e" secondAttribute="bottom" id="I2W-FD-kgy"/>
+                <constraint firstAttribute="bottom" secondItem="6Aa-gb-uXk" secondAttribute="bottom" id="KY8-IT-rU2"/>
+                <constraint firstItem="1kj-nR-82e" firstAttribute="top" secondItem="A4Q-Eg-GUw" secondAttribute="top" id="QEN-GE-alb"/>
+                <constraint firstAttribute="trailing" secondItem="1kj-nR-82e" secondAttribute="trailing" id="Vvg-GI-7Ce"/>
+                <constraint firstItem="6Aa-gb-uXk" firstAttribute="leading" secondItem="A4Q-Eg-GUw" secondAttribute="leading" id="Xca-CK-stH"/>
+                <constraint firstItem="1kj-nR-82e" firstAttribute="leading" secondItem="A4Q-Eg-GUw" secondAttribute="leading" id="chT-oR-Qkz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btneditload" destination="htZ-JE-lm8" id="qVA-1r-AUa"/>
+                <outlet property="btnlinkscheduleconfirm" destination="N3l-XO-ofr" id="ReT-dQ-oK8"/>
+                <outlet property="btnmakepublish" destination="9je-nk-W67" id="gpN-Jy-Wjl"/>
+                <outlet property="btnmarkascancel" destination="VMX-st-qxW" id="oYO-bI-Z7V"/>
+                <outlet property="btnnotinterested" destination="iKS-vX-MQD" id="lbH-nN-LZ8"/>
+                <outlet property="heightbtnnotinterested" destination="UJp-ad-5OO" id="Yei-yF-QnR"/>
+                <outlet property="vwwithmultiplebtns" destination="6Aa-gb-uXk" id="MSv-ho-4oc"/>
+                <outlet property="vwwithsinglebutton" destination="1kj-nR-82e" id="297-EF-N50"/>
+            </connections>
+            <point key="canvasLocation" x="360" y="-392"/>
+        </view>
+    </objects>
+</document>

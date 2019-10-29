@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellCvHomeCounter" id="AIn-0t-Cn6" customClass="CellCvHomeCounter">
+            <rect key="frame" x="0.0" y="0.0" width="126" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="126" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTH-Kd-RVp">
+                        <rect key="frame" x="0.0" y="2" width="126" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="xpA-28-QCr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                        <color key="textColor" red="0.90588235294117647" green="0.37254901960784315" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xb-cj-fVi">
+                        <rect key="frame" x="0.0" y="30" width="126" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="GP2-Pq-frZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="60"/>
+                        <state key="normal" title="233">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="btnCounterClicked:" destination="AIn-0t-Cn6" eventType="touchDragOutside" id="YWn-pR-yx2"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTIFICATIONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ec-eR-Wnv">
+                        <rect key="frame" x="0.0" y="78" width="126" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="kQI-8M-MY9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QTH-Kd-RVp" firstAttribute="leading" secondItem="AIn-0t-Cn6" secondAttribute="leading" id="0uP-aj-rfr"/>
+                <constraint firstAttribute="trailing" secondItem="QTH-Kd-RVp" secondAttribute="trailing" id="3aK-M8-sds"/>
+                <constraint firstItem="3Xb-cj-fVi" firstAttribute="top" secondItem="QTH-Kd-RVp" secondAttribute="bottom" constant="7" id="6oL-Bh-oRa"/>
+                <constraint firstAttribute="trailing" secondItem="0Ec-eR-Wnv" secondAttribute="trailing" id="Eaj-Gd-2dL"/>
+                <constraint firstItem="3Xb-cj-fVi" firstAttribute="leading" secondItem="AIn-0t-Cn6" secondAttribute="leading" id="Hbv-Hv-c3L"/>
+                <constraint firstItem="QTH-Kd-RVp" firstAttribute="top" secondItem="AIn-0t-Cn6" secondAttribute="top" constant="2" id="JjF-qH-IHl"/>
+                <constraint firstItem="0Ec-eR-Wnv" firstAttribute="top" secondItem="3Xb-cj-fVi" secondAttribute="bottom" constant="3" id="TEO-pn-8bt"/>
+                <constraint firstAttribute="trailing" secondItem="3Xb-cj-fVi" secondAttribute="trailing" id="eEj-1T-UnM"/>
+                <constraint firstItem="0Ec-eR-Wnv" firstAttribute="leading" secondItem="AIn-0t-Cn6" secondAttribute="leading" id="hlO-8K-9md"/>
+                <constraint firstAttribute="bottom" secondItem="0Ec-eR-Wnv" secondAttribute="bottom" constant="1" id="jxm-OI-tYE"/>
+            </constraints>
+            <size key="customSize" width="178" height="151"/>
+            <connections>
+                <outlet property="btnCounter" destination="3Xb-cj-fVi" id="QRA-Na-RLv"/>
+                <outlet property="lblSubTitle" destination="0Ec-eR-Wnv" id="8a7-e0-l6t"/>
+                <outlet property="lblTitle" destination="QTH-Kd-RVp" id="IWl-Ks-AUn"/>
+            </connections>
+            <point key="canvasLocation" x="-289" y="-165"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellCvPickedImage" id="aTg-Cq-I1G" customClass="CellCvPickedImage">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage" translatesAutoresizingMaskIntoConstraints="NO" id="JI4-Ra-p5e">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgclosebutton" translatesAutoresizingMaskIntoConstraints="NO" id="hpa-Xl-tdM">
+                        <rect key="frame" x="80" y="0.0" width="20" height="20"/>
+                        <color key="backgroundColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="1fr-iY-Evd"/>
+                            <constraint firstAttribute="height" constant="20" id="Log-1P-evN"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dO-Jh-BiC">
+                        <rect key="frame" x="50" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="AMY-GF-wc5"/>
+                            <constraint firstAttribute="width" constant="50" id="mZw-dZ-z4T"/>
+                        </constraints>
+                        <connections>
+                            <action selector="btnDeleteImageClicked:" destination="aTg-Cq-I1G" eventType="touchUpInside" id="bQz-7F-IW7"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JI4-Ra-p5e" secondAttribute="trailing" id="N6U-wD-76n"/>
+                <constraint firstItem="JI4-Ra-p5e" firstAttribute="top" secondItem="aTg-Cq-I1G" secondAttribute="top" id="ROO-CY-Jl7"/>
+                <constraint firstItem="5dO-Jh-BiC" firstAttribute="trailing" secondItem="JI4-Ra-p5e" secondAttribute="trailing" id="UvH-SH-2kH"/>
+                <constraint firstAttribute="bottom" secondItem="JI4-Ra-p5e" secondAttribute="bottom" id="YYC-Bn-ocO"/>
+                <constraint firstItem="JI4-Ra-p5e" firstAttribute="leading" secondItem="aTg-Cq-I1G" secondAttribute="leading" id="cvk-8G-g6V"/>
+                <constraint firstItem="hpa-Xl-tdM" firstAttribute="top" secondItem="JI4-Ra-p5e" secondAttribute="top" id="hqB-Hr-Lei"/>
+                <constraint firstItem="5dO-Jh-BiC" firstAttribute="top" secondItem="JI4-Ra-p5e" secondAttribute="top" id="zXd-KB-Gap"/>
+                <constraint firstItem="hpa-Xl-tdM" firstAttribute="trailing" secondItem="JI4-Ra-p5e" secondAttribute="trailing" id="ze2-xC-cUH"/>
+            </constraints>
+            <connections>
+                <outlet property="btnDeleteImage" destination="5dO-Jh-BiC" id="oYB-Oa-s0O"/>
+                <outlet property="imgLarge" destination="JI4-Ra-p5e" id="2Xa-Mg-fcZ"/>
+                <outlet property="imgcancel" destination="hpa-Xl-tdM" id="JIm-Ox-gIH"/>
+            </connections>
+            <point key="canvasLocation" x="-80" y="-159"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="imgclosebutton" width="10" height="10"/>
+        <image name="noimage" width="75" height="75"/>
+    </resources>
+</document>

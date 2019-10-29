@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellWithTableview" rowHeight="200" id="XIb-Ha-Gt3" customClass="CellWithTableview">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XIb-Ha-Gt3" id="z0A-gO-2cp">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="400" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="4JE-7P-Kdf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="XIb-Ha-Gt3" id="Wcd-Be-LvQ"/>
+                            <outlet property="delegate" destination="XIb-Ha-Gt3" id="g1E-su-vgy"/>
+                        </connections>
+                    </tableView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="4JE-7P-Kdf" secondAttribute="bottom" id="30h-c4-ubx"/>
+                    <constraint firstAttribute="trailing" secondItem="4JE-7P-Kdf" secondAttribute="trailing" id="YiG-VR-6BU"/>
+                    <constraint firstItem="4JE-7P-Kdf" firstAttribute="top" secondItem="z0A-gO-2cp" secondAttribute="top" id="p1j-3Z-bh2"/>
+                    <constraint firstItem="4JE-7P-Kdf" firstAttribute="leading" secondItem="z0A-gO-2cp" secondAttribute="leading" id="qwu-ut-3uJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="tblInsideCell" destination="4JE-7P-Kdf" id="eXq-I0-yZ4"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="-81"/>
+        </tableViewCell>
+    </objects>
+</document>

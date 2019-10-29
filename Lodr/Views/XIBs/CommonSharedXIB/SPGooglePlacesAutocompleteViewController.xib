@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPGooglePlacesAutocompleteViewController">
+            <connections>
+                <outlet property="btnCancel" destination="FUU-s5-3C4" id="lXy-NT-Qgs"/>
+                <outlet property="btnClosePopup" destination="dlx-fq-GUG" id="fVa-og-c9y"/>
+                <outlet property="btnMapviewTapped" destination="zp1-Oy-lpn" id="zac-x3-W1u"/>
+                <outlet property="btnusemycurrentlocation" destination="yac-Fw-L1s" id="5t0-Ua-wad"/>
+                <outlet property="heightbtnCurrentlocation" destination="94V-Tl-Nz3" id="VmG-Vq-aSd"/>
+                <outlet property="mapView" destination="7" id="8"/>
+                <outlet property="searchDisplayController" destination="10" id="12"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="vwNavbar" destination="eGB-Sd-MeK" id="CsN-Hp-Wx8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGB-Sd-MeK">
+                    <rect key="frame" x="0.0" y="1" width="320" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlx-fq-GUG">
+                            <rect key="frame" x="265" y="1" width="52" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="BYZ-du-z3Z"/>
+                                <constraint firstAttribute="width" constant="52" id="VbI-2L-qqd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" red="0.8980392157" green="0.33333333329999998" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClosePopupClicked:" destination="-1" eventType="touchUpInside" id="DDI-T8-yJb"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="6Mc-nx-Fnu">
+                            <rect key="frame" x="82" y="7" width="156" height="31"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="sN2-lg-OdR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUU-s5-3C4">
+                            <rect key="frame" x="0.0" y="1" width="72" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="dQS-SY-18h"/>
+                                <constraint firstAttribute="width" constant="72" id="fom-fy-rR0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.8980392157" green="0.33333333329999998" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnCancelClicked:" destination="-1" eventType="touchUpInside" id="bD7-Io-Y6T"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="FUU-s5-3C4" secondAttribute="bottom" constant="3" id="HNY-bS-CJD"/>
+                        <constraint firstAttribute="bottom" secondItem="dlx-fq-GUG" secondAttribute="bottom" constant="3" id="LOw-qj-2uh"/>
+                        <constraint firstItem="FUU-s5-3C4" firstAttribute="top" secondItem="eGB-Sd-MeK" secondAttribute="top" constant="1" id="Mg5-pH-xpd"/>
+                        <constraint firstAttribute="trailing" secondItem="dlx-fq-GUG" secondAttribute="trailing" constant="3" id="Nex-L4-Agm"/>
+                        <constraint firstItem="6Mc-nx-Fnu" firstAttribute="top" secondItem="eGB-Sd-MeK" secondAttribute="top" constant="7" id="PhL-Ca-tsT"/>
+                        <constraint firstItem="dlx-fq-GUG" firstAttribute="top" secondItem="eGB-Sd-MeK" secondAttribute="top" constant="1" id="Q39-nh-yLJ"/>
+                        <constraint firstAttribute="height" constant="48" id="Qi7-lT-aBc"/>
+                        <constraint firstAttribute="bottom" secondItem="6Mc-nx-Fnu" secondAttribute="bottom" constant="10" id="XnH-Mo-dzh"/>
+                        <constraint firstItem="dlx-fq-GUG" firstAttribute="leading" secondItem="6Mc-nx-Fnu" secondAttribute="trailing" constant="27" id="dRE-cw-xqW"/>
+                        <constraint firstItem="FUU-s5-3C4" firstAttribute="leading" secondItem="eGB-Sd-MeK" secondAttribute="leading" id="kKb-SM-Hoj"/>
+                        <constraint firstItem="6Mc-nx-Fnu" firstAttribute="leading" secondItem="eGB-Sd-MeK" secondAttribute="leading" constant="82" id="qPf-57-VFX"/>
+                        <constraint firstItem="dlx-fq-GUG" firstAttribute="leading" secondItem="6Mc-nx-Fnu" secondAttribute="trailing" constant="27" id="sqe-bH-J0D"/>
+                        <constraint firstItem="6Mc-nx-Fnu" firstAttribute="leading" secondItem="FUU-s5-3C4" secondAttribute="trailing" constant="10" id="xp5-XE-M4b"/>
+                    </constraints>
+                </view>
+                <searchBar contentMode="redraw" placeholder="Search location" translatesAutoresizingMaskIntoConstraints="NO" id="Wcq-PS-LvP">
+                    <rect key="frame" x="0.0" y="47" width="320" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="JHI-Rj-ZF7"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="10" id="wxu-DQ-VYN"/>
+                    </connections>
+                </searchBar>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7">
+                    <rect key="frame" x="0.0" y="103" width="320" height="322"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="18"/>
+                    </connections>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zp1-Oy-lpn">
+                    <rect key="frame" x="0.0" y="103" width="320" height="322"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="btnMapviewTappedClicked:" destination="-1" eventType="touchUpInside" id="v8c-Eu-546"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yac-Fw-L1s">
+                    <rect key="frame" x="0.0" y="425" width="320" height="34"/>
+                    <color key="backgroundColor" red="0.90588235289999997" green="0.37254901959999998" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="94V-Tl-Nz3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="USE CURRENT LOCATION" image="mapmarker1">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnusemycurrentlocationclicked:" destination="-1" eventType="touchUpInside" id="00E-PW-fKQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Wcq-PS-LvP" firstAttribute="top" secondItem="1" secondAttribute="top" constant="47" id="3xt-Wx-Hsa"/>
+                <constraint firstAttribute="trailing" secondItem="Wcq-PS-LvP" secondAttribute="trailing" id="6KS-DS-T50"/>
+                <constraint firstItem="7" firstAttribute="top" secondItem="Wcq-PS-LvP" secondAttribute="bottom" id="BEi-7F-MlC"/>
+                <constraint firstAttribute="trailing" secondItem="eGB-Sd-MeK" secondAttribute="trailing" id="JCJ-QV-pgq"/>
+                <constraint firstItem="eGB-Sd-MeK" firstAttribute="top" secondItem="1" secondAttribute="top" constant="1" id="S6E-JG-Md1"/>
+                <constraint firstItem="Wcq-PS-LvP" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Xcx-dh-Fe6"/>
+                <constraint firstAttribute="bottom" secondItem="yac-Fw-L1s" secondAttribute="bottom" constant="1" id="Yhf-sd-SgW"/>
+                <constraint firstItem="yac-Fw-L1s" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="cFO-Pb-d2r"/>
+                <constraint firstItem="yac-Fw-L1s" firstAttribute="top" secondItem="7" secondAttribute="bottom" id="iLb-2A-Rw7"/>
+                <constraint firstItem="yac-Fw-L1s" firstAttribute="top" secondItem="7" secondAttribute="bottom" id="iyK-WV-RIV"/>
+                <constraint firstItem="7" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="jCw-2l-x9y"/>
+                <constraint firstAttribute="trailing" secondItem="7" secondAttribute="trailing" id="kMj-0Y-7M8"/>
+                <constraint firstAttribute="trailing" secondItem="yac-Fw-L1s" secondAttribute="trailing" id="ngN-tK-KD4"/>
+                <constraint firstItem="eGB-Sd-MeK" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="wNh-xw-4Nw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="192" y="357"/>
+        </view>
+        <searchDisplayController id="10">
+            <connections>
+                <outlet property="delegate" destination="-1" id="16"/>
+                <outlet property="searchBar" destination="Wcq-PS-LvP" id="mX3-CG-ApZ"/>
+                <outlet property="searchContentsController" destination="-1" id="13"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="14"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="15"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <image name="mapmarker1" width="20" height="20"/>
+    </resources>
+</document>

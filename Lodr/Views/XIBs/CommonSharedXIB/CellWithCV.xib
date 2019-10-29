@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellWithCV" rowHeight="150" id="vhg-kC-pHX" customClass="CellWithCV">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vhg-kC-pHX" id="9yM-PS-yoQ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Photos:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orl-r3-1Ny">
+                        <rect key="frame" x="9" y="10" width="306" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="i0z-W7-fU9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                        <rect key="frame" x="9" y="40" width="302" height="150"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please click on &quot;Add Pictures&quot; to add pictures here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf4-9m-3aO">
+                                <rect key="frame" x="0.0" y="0.0" width="302" height="150"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="coM-lA-fp8">
+                                <rect key="frame" x="0.0" y="0.0" width="302" height="150"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="n5y-1v-11U">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="coM-lA-fp8" secondAttribute="bottom" id="4ld-Eq-XG3"/>
+                            <constraint firstItem="coM-lA-fp8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="L4V-G2-uNw"/>
+                            <constraint firstItem="coM-lA-fp8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qv0-Tc-6uV"/>
+                            <constraint firstAttribute="bottom" secondItem="Rf4-9m-3aO" secondAttribute="bottom" id="TbH-B1-Q43"/>
+                            <constraint firstItem="Rf4-9m-3aO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fUL-Xm-2eS"/>
+                            <constraint firstAttribute="trailing" secondItem="Rf4-9m-3aO" secondAttribute="trailing" id="ivR-JU-pJx"/>
+                            <constraint firstItem="Rf4-9m-3aO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lum-O2-HaT"/>
+                            <constraint firstAttribute="trailing" secondItem="coM-lA-fp8" secondAttribute="trailing" id="zmf-Cd-zTJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="orl-r3-1Ny" secondAttribute="trailing" constant="5" id="1bY-zA-V6a"/>
+                    <constraint firstItem="orl-r3-1Ny" firstAttribute="leading" secondItem="9yM-PS-yoQ" secondAttribute="leading" constant="9" id="3NZ-bX-zHe"/>
+                    <constraint firstItem="orl-r3-1Ny" firstAttribute="top" secondItem="9yM-PS-yoQ" secondAttribute="top" constant="10" id="Enc-6h-dh4"/>
+                    <constraint firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="9" id="I1f-Og-cqI"/>
+                    <constraint firstItem="iN0-l3-epB" firstAttribute="top" secondItem="9yM-PS-yoQ" secondAttribute="top" constant="40" id="I8W-R4-tHN"/>
+                    <constraint firstItem="iN0-l3-epB" firstAttribute="leading" secondItem="9yM-PS-yoQ" secondAttribute="leading" constant="9" id="Jft-qm-0ye"/>
+                    <constraint firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" constant="9" id="N0r-wJ-eMX"/>
+                    <constraint firstItem="iN0-l3-epB" firstAttribute="top" secondItem="orl-r3-1Ny" secondAttribute="bottom" constant="10" id="bU1-ma-1TK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="cvPhotoes" destination="coM-lA-fp8" id="8nM-S0-4R8"/>
+                <outlet property="lblAllphoto" destination="orl-r3-1Ny" id="0uS-9f-y8i"/>
+                <outlet property="lblNoData" destination="Rf4-9m-3aO" id="AG3-sT-eo0"/>
+                <outlet property="vwMainBg" destination="iN0-l3-epB" id="ew4-dS-reE"/>
+            </connections>
+            <point key="canvasLocation" x="-724" y="162.5"/>
+        </tableViewCell>
+    </objects>
+</document>

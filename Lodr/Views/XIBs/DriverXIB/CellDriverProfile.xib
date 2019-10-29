@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellDriverProfile" rowHeight="100" id="0Ku-c6-2zB" customClass="CellDriverProfile">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Ku-c6-2zB" id="2KS-Rb-lUP">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTt-A4-qS4">
+                        <rect key="frame" x="20" y="49" width="282" height="35"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available Length:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgh-3x-qny">
+                        <rect key="frame" x="20" y="13" width="292" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="vIP-Vw-vaj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02B-8s-A2c">
+                        <rect key="frame" x="0.0" y="84" width="320" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="qjq-AD-a3a"/>
+                        </constraints>
+                        <string key="text">..................................................................................................................................................................</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="02B-8s-A2c" firstAttribute="top" secondItem="qTt-A4-qS4" secondAttribute="bottom" id="2vf-bV-jdh"/>
+                    <constraint firstAttribute="trailing" secondItem="02B-8s-A2c" secondAttribute="trailing" id="Dim-zS-dKJ"/>
+                    <constraint firstAttribute="bottom" secondItem="02B-8s-A2c" secondAttribute="bottom" constant="1" id="EU0-3t-XGu"/>
+                    <constraint firstItem="qTt-A4-qS4" firstAttribute="leading" secondItem="2KS-Rb-lUP" secondAttribute="leading" constant="20" id="P3s-Mz-TAV"/>
+                    <constraint firstAttribute="trailing" secondItem="qTt-A4-qS4" secondAttribute="trailing" constant="18" id="UQ4-dc-w8I"/>
+                    <constraint firstItem="jgh-3x-qny" firstAttribute="leading" secondItem="2KS-Rb-lUP" secondAttribute="leading" constant="20" id="ema-bX-ynU"/>
+                    <constraint firstItem="qTt-A4-qS4" firstAttribute="top" secondItem="jgh-3x-qny" secondAttribute="bottom" constant="15" id="eqi-xe-BIM"/>
+                    <constraint firstItem="02B-8s-A2c" firstAttribute="leading" secondItem="2KS-Rb-lUP" secondAttribute="leading" id="hwJ-Gc-BPn"/>
+                    <constraint firstItem="qTt-A4-qS4" firstAttribute="top" secondItem="jgh-3x-qny" secondAttribute="bottom" constant="15" id="lnF-LU-1rP"/>
+                    <constraint firstItem="02B-8s-A2c" firstAttribute="top" secondItem="qTt-A4-qS4" secondAttribute="bottom" id="oIx-7g-Iz3"/>
+                    <constraint firstAttribute="trailing" secondItem="jgh-3x-qny" secondAttribute="trailing" constant="8" id="qLe-U4-xL3"/>
+                    <constraint firstItem="jgh-3x-qny" firstAttribute="top" secondItem="2KS-Rb-lUP" secondAttribute="top" constant="13" id="rIy-ba-2MH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="heightseparator" destination="qjq-AD-a3a" id="RCO-K3-p3K"/>
+                <outlet property="lblDriverDetails" destination="qTt-A4-qS4" id="djX-m9-VHw"/>
+                <outlet property="lblDriverFieldName" destination="jgh-3x-qny" id="3re-R0-Pbj"/>
+            </connections>
+            <point key="canvasLocation" x="-46" y="-214"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellCalenderSchedule" rowHeight="70" id="gvo-DC-2iA" customClass="CellCalenderSchedule">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gvo-DC-2iA" id="feF-NQ-mfu">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aU-9n-FQH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">No driver available in your network or company 
+for shippment of this load.</string>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="11"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohy-kw-JJ0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6A-jW-bnZ" userLabel="vwName">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVb-eP-Rg2">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="btnVwDetailsClciked:" destination="gvo-DC-2iA" eventType="touchUpInside" id="kBg-dK-WZm"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" fixedFrame="YES" text="OH-IL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ubn-9Y-IMI">
+                                        <rect key="frame" x="0.0" y="2" width="80" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDh-Nm-6bK">
+                                        <rect key="frame" x="79" y="0.0" width="1" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="eyQ-y8-9B8"/>
+                                    <constraint firstAttribute="width" constant="80" id="rkO-dT-bln"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPl-MO-bzo">
+                                <rect key="frame" x="80" y="0.0" width="240" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ArA-b0-mra">
+                                        <rect key="frame" x="47" y="18" width="146" height="34"/>
+                                        <color key="backgroundColor" red="0.2627450980392157" green="0.58039215686274515" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="PQC-Pm-xEa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                        <state key="normal" title="SCHEDULE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnDriverScheduleclicked:" destination="gvo-DC-2iA" eventType="touchUpInside" id="Spq-DM-gWE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="8d6-rP-cOU"/>
+                                    <constraint firstItem="ArA-b0-mra" firstAttribute="top" secondItem="TPl-MO-bzo" secondAttribute="top" constant="18" id="Vxp-Jd-Zaf"/>
+                                    <constraint firstAttribute="bottom" secondItem="ArA-b0-mra" secondAttribute="bottom" constant="18" id="lnb-U1-1dn"/>
+                                    <constraint firstItem="ArA-b0-mra" firstAttribute="leading" secondItem="TPl-MO-bzo" secondAttribute="leading" constant="47" id="nqc-e8-NHZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ArA-b0-mra" secondAttribute="trailing" constant="47" id="zei-JB-JlI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQY-bs-2le">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QrS-JN-QEJ">
+                                        <rect key="frame" x="13" y="18" width="110" height="34"/>
+                                        <color key="backgroundColor" red="0.26274509800000001" green="0.58039215690000001" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="YVe-PU-gCX"/>
+                                            <constraint firstAttribute="width" constant="110" id="zim-5A-4FU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                        <state key="normal" title="SCHEDULE">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnscheduledclicked:" destination="gvo-DC-2iA" eventType="touchUpInside" id="YXH-zq-y0B"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcm-EG-ge0">
+                                        <rect key="frame" x="131" y="18" width="176" height="34"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="MIK-WQ-sfk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
+                                        <state key="normal" title="SELECT ALTERNATE ASSET">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnAlternateEquiclicked:" destination="gvo-DC-2iA" eventType="touchUpInside" id="NGK-4K-od8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="pcm-EG-ge0" firstAttribute="leading" secondItem="QrS-JN-QEJ" secondAttribute="trailing" constant="8" id="Ghz-JR-pH0"/>
+                                    <constraint firstAttribute="trailing" secondItem="pcm-EG-ge0" secondAttribute="trailing" constant="13" id="LLr-LW-Ec7"/>
+                                    <constraint firstItem="QrS-JN-QEJ" firstAttribute="top" secondItem="UQY-bs-2le" secondAttribute="top" constant="18" id="MrA-et-npc"/>
+                                    <constraint firstAttribute="bottom" secondItem="QrS-JN-QEJ" secondAttribute="bottom" constant="18" id="bMy-pT-N1l"/>
+                                    <constraint firstAttribute="height" constant="70" id="ca8-rH-Jb0"/>
+                                    <constraint firstItem="pcm-EG-ge0" firstAttribute="top" secondItem="UQY-bs-2le" secondAttribute="top" constant="18" id="daT-NL-cjp"/>
+                                    <constraint firstItem="pcm-EG-ge0" firstAttribute="leading" secondItem="QrS-JN-QEJ" secondAttribute="trailing" constant="8" id="drz-r9-t8m"/>
+                                    <constraint firstItem="QrS-JN-QEJ" firstAttribute="leading" secondItem="UQY-bs-2le" secondAttribute="leading" constant="13" id="lRG-Pf-yQh"/>
+                                    <constraint firstAttribute="bottom" secondItem="pcm-EG-ge0" secondAttribute="bottom" constant="18" id="pj7-ub-PnF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UQY-bs-2le" secondAttribute="trailing" id="1me-da-eZw"/>
+                            <constraint firstItem="TPl-MO-bzo" firstAttribute="leading" secondItem="j6A-jW-bnZ" secondAttribute="trailing" id="23d-yc-sDV"/>
+                            <constraint firstItem="TPl-MO-bzo" firstAttribute="top" secondItem="Ohy-kw-JJ0" secondAttribute="top" id="8u9-JY-OIB"/>
+                            <constraint firstAttribute="trailing" secondItem="TPl-MO-bzo" secondAttribute="trailing" id="LKS-SJ-uhi"/>
+                            <constraint firstItem="j6A-jW-bnZ" firstAttribute="top" secondItem="Ohy-kw-JJ0" secondAttribute="top" id="RbP-j1-41L"/>
+                            <constraint firstItem="j6A-jW-bnZ" firstAttribute="leading" secondItem="Ohy-kw-JJ0" secondAttribute="leading" id="Yx7-E3-zHp"/>
+                            <constraint firstAttribute="height" constant="70" id="Z92-nb-DgG"/>
+                            <constraint firstItem="UQY-bs-2le" firstAttribute="leading" secondItem="Ohy-kw-JJ0" secondAttribute="leading" id="fdg-LP-kSx"/>
+                            <constraint firstItem="TPl-MO-bzo" firstAttribute="leading" secondItem="j6A-jW-bnZ" secondAttribute="trailing" id="k5M-pK-rnT"/>
+                            <constraint firstAttribute="bottom" secondItem="TPl-MO-bzo" secondAttribute="bottom" id="lre-lB-PP9"/>
+                            <constraint firstAttribute="bottom" secondItem="UQY-bs-2le" secondAttribute="bottom" id="omA-4i-Cvy"/>
+                            <constraint firstItem="UQY-bs-2le" firstAttribute="top" secondItem="Ohy-kw-JJ0" secondAttribute="top" id="otJ-kI-yKt"/>
+                            <constraint firstAttribute="bottom" secondItem="j6A-jW-bnZ" secondAttribute="bottom" id="pmq-W6-7j5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8aU-9n-FQH" firstAttribute="top" secondItem="feF-NQ-mfu" secondAttribute="top" id="3ej-jX-6TT"/>
+                    <constraint firstItem="Ohy-kw-JJ0" firstAttribute="top" secondItem="feF-NQ-mfu" secondAttribute="top" id="5bu-Ei-ki3"/>
+                    <constraint firstAttribute="bottom" secondItem="8aU-9n-FQH" secondAttribute="bottom" id="6gh-x2-GTV"/>
+                    <constraint firstItem="Ohy-kw-JJ0" firstAttribute="leading" secondItem="feF-NQ-mfu" secondAttribute="leading" id="EWC-ey-ujn"/>
+                    <constraint firstAttribute="trailing" secondItem="Ohy-kw-JJ0" secondAttribute="trailing" id="LDQ-lY-YZJ"/>
+                    <constraint firstAttribute="trailing" secondItem="8aU-9n-FQH" secondAttribute="trailing" id="LZU-fw-Wyw"/>
+                    <constraint firstItem="8aU-9n-FQH" firstAttribute="leading" secondItem="feF-NQ-mfu" secondAttribute="leading" id="qby-1k-y3k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="btnAlternateEqui" destination="pcm-EG-ge0" id="acb-Mr-PiG"/>
+                <outlet property="btnDriverSchedule" destination="ArA-b0-mra" id="pNf-Pc-wZ3"/>
+                <outlet property="btnSchedule" destination="QrS-JN-QEJ" id="UbA-ra-KqL"/>
+                <outlet property="btnVwDetails" destination="NVb-eP-Rg2" id="iVn-sY-EfI"/>
+                <outlet property="lblNodriverAvailable" destination="8aU-9n-FQH" id="92W-um-3CZ"/>
+                <outlet property="lblResourcename" destination="Ubn-9Y-IMI" id="Ibz-tO-WRW"/>
+                <outlet property="originschedulebtn" destination="lRG-Pf-yQh" id="htS-DX-Gsh"/>
+                <outlet property="vwBtns" destination="TPl-MO-bzo" id="LDe-q8-h1A"/>
+                <outlet property="vwMain" destination="Ohy-kw-JJ0" id="xFn-fB-M4D"/>
+                <outlet property="vwResourcenames" destination="j6A-jW-bnZ" id="Y2c-hi-GCs"/>
+                <outlet property="vwSchudeledbtn" destination="UQY-bs-2le" id="Aa3-qX-KHS"/>
+            </connections>
+            <point key="canvasLocation" x="-28" y="-24"/>
+        </tableViewCell>
+    </objects>
+</document>

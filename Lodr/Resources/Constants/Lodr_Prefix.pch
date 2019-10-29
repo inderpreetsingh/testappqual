@@ -1,0 +1,35 @@
+//
+//  Lodr_Prefix.pch
+//  Lodr
+//
+//  Created by Payal Umraliya on 10/03/17.
+//  Copyright © 2017 checkmate. All rights reserved.
+//
+
+#ifndef Lodr_Prefix_pch
+#define Lodr_Prefix_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "BaseVC.h"
+#import "AppDelegate.h"
+#import "RequestKeyConstants.h"
+#import "ColorAndImgeConstants.h"
+#import "LodrAppConstants.h"
+#import "LodrWsConstants.h"
+#import "CoreDataConstants.h"
+#import "LodrSecretConstants.h"
+#import "AZNotification.h"
+#import "WebServiceDataAdaptor.h"
+#import "NetworkAvailability.h"
+#import "WebServiceConnector.h"
+#import "NSString+Extensions.h"
+#import "User.h"
+#import "UserAccount.h"
+#import "DefaultsValues.h"
+#import "GlobalFunction.h"
+#import "UIImageView+WebCache.h"
+#import "DateFormats.h"
+#import "Function.h"
+
+#endif
